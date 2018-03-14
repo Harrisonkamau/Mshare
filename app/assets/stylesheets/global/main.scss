@@ -1,0 +1,30 @@
+// Navigation
+@import 'navbar';
+
+// Forms
+@import 'forms/main_form';
+
+
+// Harrison's button library
+@import 'buttons/smart_hover';
+
+// A tags
+@import 'links/a_links';
+
+// Flash messages
+@import 'flashes/alert';
+
+// Google Font
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+// common rules
+body {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Karma', serif;
+
+  .header {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+}

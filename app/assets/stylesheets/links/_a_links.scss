@@ -1,0 +1,12 @@
+@import 'global/variables';
+
+.links {
+  a {
+    color: $primary_color;
+
+    &:hover {
+      color: $a_links;
+      text-decoration: none;
+    }
+  }
+}

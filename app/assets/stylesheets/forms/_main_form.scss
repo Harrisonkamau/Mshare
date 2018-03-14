@@ -1,0 +1,25 @@
+@import 'global/variables';
+
+// form body
+.form {
+  margin: 0 auto;
+  width: 500px;
+
+    // inputs
+  .form-control {
+    color: $input_color;
+
+    &:active, &:focus {
+      border: 1px solid $primary_color;
+      box-shadow: none;
+    }
+  }
+}
+
+.form-headers {
+  color: $nav_links;
+  border-bottom: 1px solid $underlines;
+  width: 30%;
+  padding-bottom: 10px;
+  text-align: center;
+}

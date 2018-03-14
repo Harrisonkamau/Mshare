@@ -1,0 +1,25 @@
+@import 'global/variables';
+
+// Smart font for buttons
+@import url('https://fonts.googleapis.com/css?family=Karma');
+
+// Button
+.btn {
+  font-family: 'Karma', serif;
+  background-color: $primary_color;
+  color: white;
+  border: none;
+  width: 25%;
+  -webkit-box-shadow:0 2px 0 $notifications;
+    -moz-box-shadow: 0 2px 0 $notifications;
+    box-shadow: 0 2px 0 $notifications;
+
+  &:hover {
+    background-color: $smart_shadow;
+    color: white;
+    transition: none !important;
+  }
+  &:active {
+
+  }
+}

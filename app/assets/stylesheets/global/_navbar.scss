@@ -1,0 +1,21 @@
+@import 'variables';
+
+#bs-example-navbar-collapse-1 {
+  a {
+    color: $nav_links;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $primary_color;
+      text-decoration: none;
+    }
+  }
+  .nav-item {
+    display: inline-block;
+    padding-right: 10px;
+  }
+}
+
+.navbar-brand {
+  font-size: 23px;
+}
