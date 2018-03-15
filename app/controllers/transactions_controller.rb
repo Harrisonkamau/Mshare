@@ -18,11 +18,11 @@ class TransactionsController < ApplicationController
 
 
   def transfer
-    redirect_to transactions_transfer_path
+    render template: 'transactions/_transfer'
   end
 
   def load
-    redirect_to transactions_load_path
+    render template: 'transactions/_load'
   end
 
   private

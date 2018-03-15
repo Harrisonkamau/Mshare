@@ -18,5 +18,5 @@ test:
 production:
   <<: *default
   database: m_share_production
-  username: m_share
+  username: postgres
   password: <%= ENV['M_SHARE_DATABASE_PASSWORD'] %>

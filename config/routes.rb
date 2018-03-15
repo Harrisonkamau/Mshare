@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get '/transactions' => 'transactions#index'
   get '/transactions/transfer' => 'transactions#transfer'
   post '/transactions/transfer' => 'transactions#transfer'
+  get '/transactions/load' => 'transactions#load'
   post '/transactions/load' => 'transactions#load'
   post '/transactions/timeout' => 'transactions#timeout'
   post '/transactions/create' => 'transactions#create'

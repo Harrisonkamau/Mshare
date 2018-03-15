@@ -1,7 +1,7 @@
 <div class='container'>
 <div class='form'>
   <h2>Choose a new Transaction</h2>
-  <%= form_for @transaction, url: transactions_transfer_path do |t| %>
+  <%= form_for @transaction, url: transactions_load_path do |t| %>
     <div class='form-group'>
       <%= t.label :transaction_type %>
       <%= t.select :transaction_type, Transaction::TRANSACTION_TYPES, {}, class:'form-control' %>
