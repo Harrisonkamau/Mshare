@@ -7,6 +7,8 @@ class DashboardsController < ApplicationController
   private
 
   def account_balance
-    current_user.account.account_balance.to_i
+    if current_user
+      current_user.account.account_balance.to_i
+    end
   end
 end
