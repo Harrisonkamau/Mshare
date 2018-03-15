@@ -16,8 +16,8 @@
       <ul class="nav navbar-nav navbar-right">
         <%- if user_signed_in? %>
         <li class='nav-item'><%= link_to 'Home', authenticated_root_path %></li>
-        <li class='nav-item'><a href='#'>Transactions</a></li>
-        <li class='nav-item'><a href='#'>Balance</a></li>
+        <li class='nav-item'><%= link_to 'Transactions', transactions_path %></li>
+        <li class='nav-item'><a href='#'>Wallet <span class='badge'>$ <%= current_user.account.account_balance%></span></a></li>
         <li class='nav-item'><%= link_to 'Sign Out', destroy_user_session_path, method: 'delete' %></li>
         <li class='nav-item nohref'>
           <a nohref>

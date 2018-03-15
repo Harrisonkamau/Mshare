@@ -1,0 +1,8 @@
+<p> You are about to transfer money </p>
+<div class='container form'>
+<%= form_for @transaction, url: transactions_transfer_path do |f|%>
+  <div class='form-group'>
+    <%= f.label :receiver_id %>
+    <%= f.number_field :receiver_id, placeholder:'Enter number to send to', class:'form-control' %>
+  </div>
+<% end %>

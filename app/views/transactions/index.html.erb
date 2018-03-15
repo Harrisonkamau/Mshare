@@ -1,0 +1,9 @@
+<div class='container'>
+  <% if @transactions.size == 0%>
+    <p>Hey, <%= current_user.name %>. You have not made any transactions made</p>
+    <p><%= link_to 'Begin here', transactions_new_path %></p>
+  <% else %>
+    <p>Below are your transactions</p>
+    <%= @transactions.all %>
+  <% end %>
+</div>

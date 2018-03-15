@@ -1,0 +1,13 @@
+<div class='container'>
+  <% if @accounts.size == 0%>
+    <p>This user has no account</p>
+  <% else %>
+    <p> Hey, <%= current_user.name%>!</p>
+    Your account's balance is: <%= @account_balance %>
+    <% if @account_balance == 0 %>
+      <p> Please top up your account <%= link_to 'Top Up', transactions_new_path %></p>
+    <% else %>
+      <p> Transfer money to a number of your choosing</p>
+    <% end %>
+  <% end %>
+</div>

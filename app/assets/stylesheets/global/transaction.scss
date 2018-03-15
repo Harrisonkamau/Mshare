@@ -1,0 +1,11 @@
+@import 'variables';
+
+.preview {
+  height: auto;
+  padding: 15px;
+  width: auto;
+  color: #000;
+  background: $dark_grey;
+  box-shadow: 2px 5px 15px 4px rgba(0,0,0,0.3);
+}
+
